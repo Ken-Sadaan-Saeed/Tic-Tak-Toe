@@ -1,12 +1,19 @@
+console.log('homepage.js loaded');
+
 function displayDate() {
     alert(Date());
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded — attaching move handler');
     const btn = document.querySelector('.btn');
-    if (!btn) return;
+    if (!btn) {
+        console.warn('button .btn not found');
+        return;
+    }
 
     function moveAway() {
+        console.log('moveAway called');
         const safeMargin = 10; // percent
         const x = Math.random() * (100 - safeMargin * 2) + safeMargin;
         const y = Math.random() * (100 - safeMargin * 2) + safeMargin;
