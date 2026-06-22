@@ -1,82 +1,14 @@
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
 
+<p id="demo"></p>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
 
-<style>
-       
-          body {
-              	display: flex;
-            	justify-content: center;
-           		align-items: center;
-                height: 100vh;
-                margin: 0;
-                background-color: #f0f0f0;
-                font-family: sans-serif;
-        }
-
-        .tic {
-            display: grid;
-            grid-template-columns: repeat(3, 100px);
-            grid-template-rows: repeat(3, 100px);
-            gap: 15px;
-            padding: 4px;
-            border-radius: 3px;
-        }
-
-        .cell1 {
-            background-color: blue; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2.5rem;
-            font-weight: bold;
-            cursor: pointer;
-            user-select: none;
-        }
-        .cell2 {
-            background-color: green; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2.5rem;
-            font-weight: bold;
-            cursor: pointer;
-            user-select: none;
-        }
-        .cell3 {
-            background-color: rgb(255, 208, 0); 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2.5rem;
-            font-weight: bold;
-            cursor: pointer;
-            user-select: none;
-        }
-        
-        .cell1:hover {
-            background-color: black;
-         }
-         .cell2:hover {
-            background-color: white;
-         }
-         .cell3:hover {
-            background-color: grey;
-         }
-    </style>
-
-
-
-
-
-    <div class="tic">
-        
-        <div class="cell1"></div>
-        <div class="cell2"></div>
-        <div class="cell3"></div>
-        <div class="cell1"></div>
-        <div class="cell2"></div>
-        <div class="cell3"></div>
-        <div class="cell1"></div>
-        <div class="cell2"></div>
-        <div class="cell3"></div>
-    </div>
-
+</body>
+</html>
