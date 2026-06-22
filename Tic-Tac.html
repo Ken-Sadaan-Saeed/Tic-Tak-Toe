@@ -10,6 +10,26 @@
                 margin: 0;
                 background-color: #f0f0f0;
                 font-family: sans-serif;
+                position: relative;
+        }
+
+        .back-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(79, 70, 229, 0.45);
         }
 
         .tic {
@@ -63,9 +83,7 @@
          }
     </style>
 
-
-
-
+    <a href="index.html" class="back-link">← Back</a>
 
     <div class="tic">
         
